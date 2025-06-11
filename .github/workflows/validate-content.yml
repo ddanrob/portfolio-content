@@ -1,5 +1,6 @@
 name: Validate content
 
+
 on:
   pull_request:
     paths:
