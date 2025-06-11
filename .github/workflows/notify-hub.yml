@@ -1,0 +1,16 @@
+name: Notify portfolio hub
+on:
+  push:
+    branches: [main]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger hub rebuild
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.HUB_PAT }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/ddanrob/portfolio-hub/dispatches \
+            -d '{"event_type": "content-updated"}' 
