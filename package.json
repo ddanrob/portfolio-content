@@ -2,7 +2,8 @@
   "name": "portfolio-content",
   "private": true,
   "scripts": {
-    "content:lint": "node scripts/content-lint.js"
+    "content:lint": "node scripts/content-lint.js",
+    "validate": "node scripts/content-lint.js"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
