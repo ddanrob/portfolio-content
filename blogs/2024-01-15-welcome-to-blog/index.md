@@ -11,4 +11,4 @@ This is a placeholder post meant to demonstrate the blog format.
 
 ![Welcome to the Blog Image](./00057-1398843708.png)
 
-More content coming soon!!
+More content coming soon!!  
