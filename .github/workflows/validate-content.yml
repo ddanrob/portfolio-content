@@ -1,0 +1,14 @@
+name: Validate content
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+      - run: pnpm install
+      - run: pnpm exec markdownlint "**/*.md"
+      - run: pnpm run content:lint
+      - run: pnpm exec markdown-link-check README.md
+      - run: pnpm exec mdx blogs/*/index.md > /dev/null
+

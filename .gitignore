@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Asset backups
+*.bak
+*.tmp
+
+# Node modules or build output if ever added locally
+node_modules/
+.next/
+package-lock.json
+pnpm-lock.yaml
+
+# Ignore drafts in builds (handled by tooling)
