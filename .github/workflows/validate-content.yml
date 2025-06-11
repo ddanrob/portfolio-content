@@ -6,6 +6,9 @@ on:
     paths:
       - "**/*.json"
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
