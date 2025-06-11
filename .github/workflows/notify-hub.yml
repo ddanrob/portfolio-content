@@ -7,7 +7,7 @@ on:
 # need write on repository_dispatch
 permissions:
   contents: read
-  repository_dispatch: write
+  actions: write
 
 jobs:
   dispatch:
