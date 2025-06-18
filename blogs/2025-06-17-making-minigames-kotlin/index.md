@@ -2,6 +2,7 @@
 title: "HorizonEvents: From Datapacks to Coroutines — Building a Kotlin-Powered Minigame Plugin"
 date: "2025-06-17"
 excerpt: "Four years of experimentation turned a simple datapack project into a Kotlin plugin powering HorizonEvents."
+
 tags: ["kotlin", "minecraft", "minigames", "datapacks"]
 slug: "making-minigames-kotlin"
 draft: false
@@ -93,4 +94,5 @@ Result: **38% less CPU time** and zero ghost-tag bugs.
 ## Ready to Level Up?
 
 If you’re hacking together your first minigame, start with a datapack—shipping fast trumps elegance. But when players start asking for leaderboards, cosmetics, or 100 concurrent zombies, consider the jump. **HorizonEvents** proves that a Kotlin-powered plugin can keep the spirit of rapid iteration *and* deliver the muscle for serious scale.
+
 
