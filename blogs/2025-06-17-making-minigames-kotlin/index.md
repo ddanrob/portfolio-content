@@ -12,7 +12,8 @@ draft: false
 
 *2025-06-17 • ~6 min read*
 
-Four years ago I (ddan) kicked off the **HorizonEvents** minigame project with nothing more than command blocks and datapacks. That solo, scrappy approach let me publish fast, gather feedback, and avoid the rabbit-hole of plugin APIs. Back then the minigames ran on a tiny VPS I managed myself and were bridged into the **Hallowed Survival** lobby so friends could hop in without switching servers. The code still lives on hardware I control, but today that instance is federated with the **Horizon Ventures** network—same autonomy, far bigger audience. As the project expanded I pulled in an awesome team of builders to sculpt maps and aesthetics, while I stayed laser-focused on the code. But once our ideas—and the player counts—grew, those lovingly hacked-together datapacks began to creak. In late 2024 we hit the ceiling and decided to rewrite everything as a **Kotlin plugin for Paper**. The result is **HorizonEvents**, a data-driven, hot-reloadable framework that powers Freeze Tag, Endless Maze, Capture the Flag, Spleef, and every new idea we throw at it.
+Four years ago I (ddan) kicked off the **HorizonEvents** minigame project with nothing more than command blocks and datapacks. That solo, scrappy approach let me publish fast, gather feedback, and avoid the rabbit-hole of plugin APIs. Back then the minigames were hosted on a small Apex Minecraft Hosting server and were bridged into the **Hallowed Survival** lobby so friends could hop in without switching servers. The code still lives on rented hardware at Apex—soon migrating to Pebble Hosting and maybe one day a VPS—but today that instance is federated with the **Horizon Ventures** network—same autonomy, far bigger audience. As the project expanded I pulled in an awesome team of builders to sculpt maps and aesthetics, while I stayed laser-focused on the code. But once our ideas—and the player counts—grew, those lovingly hacked-together datapacks began to creak. In late 2024 we hit the ceiling and decided to rewrite everything as a **Kotlin plugin for Paper**. The result is **HorizonEvents**, a data-driven, hot-reloadable framework that powers Freeze Tag, Endless Maze, Capture the Flag, Spleef, and every new idea we throw at it.
+That first release—version 1.0—was very much a learning experiment. It works but only supports a single server and lobby, so a big influx of players would bottleneck things. I'm rewriting it now as version 2.0 with multi-server support to eliminate those lag issues and add every feature I've dreamed of.
 
 ---
 
@@ -53,7 +54,7 @@ Migrating to **Kotlin + Paper** wasn’t just a port; it was a redesign around t
 | Scoreboard counters & chat spam | Strongly-typed events + Adventure API UI  |
 | One long `tick` function        | Coroutine-driven schedulers               |
 | `raycasting` via armor stands   | Real hit detection through Paper events   |
-| Manual world resets             | Snapshot → copy → delete via `MapManager` |
+| Manual world resets             | Snapshot -> copy -> delete via `MapManager` |
 
 **Concrete wins:**
 
